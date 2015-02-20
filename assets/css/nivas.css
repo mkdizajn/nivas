@@ -1,30 +1,113 @@
+/*nivas custom generated font @ fs*/
+@font-face {
+    font-family: 'coolveticaregular';
+    src: url('font/coolvetica_rg-webfont.eot');
+    src: url('font/coolvetica_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/coolvetica_rg-webfont.woff2') format('woff2'),
+         url('font/coolvetica_rg-webfont.woff') format('woff'),
+         url('font/coolvetica_rg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*global custom h1 font tag*/
+h1, .jumbotron h1{
+	font-family: 'coolveticaregular';
+	font-size: 48px;
+	padding-bottom: 15px;
+	color: #000;
+}
+.white{
+	color: #fff!important;
+}
 /*global page width*/
 /*nivas template has standard 960px grid max size*/
 .container{
 	width: 960px;
 }
-
+.littlecta{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+.bigcta{
+	font-size: 31px;
+	font-weight: 800;
+}
+button[role="firstcta"]{
+	color: #000;
+	background-color: #fff;
+	border: #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 /*fix menu typography*/
 .nav>li>a{
-	font-size: 22px;
+	font-size: 20px;
 	font-family: 'Arial';
 	font-weight: 600;
-	color: #333;
+	color: #535353;
 }
 /*LOGO FIX*/
 .nav>li:first-child a{
 	padding-left: 0px;
-	margin-right: 20px;
+	margin-right: 0px;
 }
 /*all other menu items*/
 .nav>li:not(:first-child){
-	padding: 18px 16px 0 0;
+	padding: 17px 0 0 36px;
 }
 
-.jumbotron.first{
+.jumbotron.nav{
 	margin-bottom: 0px;
+	padding-bottom: 10px;
 }
-.jumbotron.gray{
+/*gray ones*/
+.jumbotron.s1{ 
 	color: white;
-	background: #333; 
+	margin-bottom: -70px!important;
+	padding-top: 28px;
+	background: rgba(116,116,116,1);
+	background: -moz-linear-gradient(top, rgba(116,116,116,1) 0%, rgba(93,93,93,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(116,116,116,1)), color-stop(100%, rgba(93,93,93,1)));
+	background: -webkit-linear-gradient(top, rgba(116,116,116,1) 0%, rgba(93,93,93,1) 100%);
+	background: -o-linear-gradient(top, rgba(116,116,116,1) 0%, rgba(93,93,93,1) 100%);
+	background: -ms-linear-gradient(top, rgba(116,116,116,1) 0%, rgba(93,93,93,1) 100%);
+	background: linear-gradient(to bottom, rgba(116,116,116,1) 0%, rgba(93,93,93,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#747474', endColorstr='#5d5d5d', GradientType=0 );
+}
+.jumbotron.s2{
+	padding-top: 0px !important;
+	margin-bottom: 0px !important;
+	background-color: #fff;
+}
+.jumbotron.s3{
+	margin-top:0px; 
+	padding-bottom: 50px !important;
+	background: url('../images/sec3back.png');
+	background-position: 50% 0px;
+}
+.container.s2{
+	background: url('../images/s2b.png');
+	background-position: 57% 15px;
+	background-repeat: no-repeat;	
+}
+.subtit{
+	font-size: 18px !important;
+}
+ul.bigli{
+	padding-left: 20px;
+	font-size: 20px !important;
+}
+.p0{
+	padding-right: 0px !important;
+}
+
+/*mobile toggler*/
+
+.navbar-toggle .icon-bar {
+	display: block;
+	width: 32px;
+	height: 5px;
+	border-radius: 1px;
+	background-color: black;
 }
