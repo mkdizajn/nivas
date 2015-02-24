@@ -10,19 +10,60 @@
     font-style: normal;
 }
 /*global custom h1 font tag*/
-h1, .jumbotron h1{
+h1,h2,h3,h4.jumbotron h1{
 	font-family: 'coolveticaregular';
 	font-size: 48px;
 	padding-bottom: 15px;
 	color: #000;
 }
-.white{
-	color: #fff!important;
+h1.white{ color: #fff; }
+.black{ color: #fff; background-color: #000 }
+.m0{ margin-top: 0px; margin-bottom: 0px; padding: 15px; font-size: 1.6em; }
+.eee{ color: #eee; }
+
+.navbar{
+	margin-bottom: 0px;
 }
-/*global page width*/
+
+/*============================
+media qrys
+============================ */
+/* fix brand on mobile */
+@media (min-width: 992px) { 
+	.navbar-brand{ padding-top: 70px; }
+	.nav>li>a{ padding-left: 50px; }
+	.nav{ padding: 70px 0 40px; }
+}
+@media (min-width: 768px) and (max-width: 992px){
+	.navbar-brand{ padding-top: 25px; }
+	.nav>li>a{ padding-left: 10px; }
+	.nav{ padding: 20px 0; }
+}
+@media (max-width: 767px){
+	.container.s2{ background-image: none !important; }
+}
+/* fix mobile toggler to look like nivas dsgn */
+.navbar-default .navbar-toggle:hover{ background-color: transparent; }
+.navbar-toggle{
+	padding: 15px 10px;
+	border: 0px;
+}
+.navbar-toggle .icon-bar { 
+	display: block;
+	width: 32px;
+	height: 5px;
+	border-radius: 1px;
+	background-color: black !important;
+}
+.vcenter {
+	margin: auto;
+}
+/*@@@@@@@@@@@@@@@@
+navigation theme
+@@@@@@@@@@@@@@@@*/
 /*nivas template has standard 960px grid max size*/
-.container{
-	width: 960px;
+.container, .jumbotron .container{
+	max-width: 960px;
 }
 .littlecta{
 	font-size: 18px;
@@ -47,16 +88,6 @@ button[role="firstcta"]{
 	font-weight: 600;
 	color: #535353;
 }
-/*LOGO FIX*/
-.nav>li:first-child a{
-	padding-left: 0px;
-	margin-right: 0px;
-}
-/*all other menu items*/
-.nav>li:not(:first-child){
-	padding: 17px 0 0 36px;
-}
-
 .jumbotron.nav{
 	margin-bottom: 0px;
 	padding-bottom: 10px;
@@ -102,12 +133,3 @@ ul.bigli{
 	padding-right: 0px !important;
 }
 
-/*mobile toggler*/
-
-.navbar-toggle .icon-bar {
-	display: block;
-	width: 32px;
-	height: 5px;
-	border-radius: 1px;
-	background-color: black;
-}
