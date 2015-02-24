@@ -19,7 +19,7 @@ h1,h2,h3,h4.jumbotron h1{
 }
 h1.white{ color: #fff; }
 .black{ color: #fff; background-color: #000 }
-.m0{ margin-top: 0px; margin-bottom: 0px; padding: 15px; font-size: 1.6em; }
+.m0{ margin-top: 0px; margin-bottom: 0px; padding: 15px; font-size: 32px !important; }
 .eee{ color: #eee; }
 .navbar{ margin-bottom: 0px; }
 .navbar-default .navbar-nav>li>a{ color: #535353; }
