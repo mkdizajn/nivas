@@ -12,23 +12,22 @@
 /*global custom h1 font tag*/
 h1,h2,h3,h4.jumbotron h1{
 	font-family: 'coolveticaregular';
-	font-size: 48px;
+	font-size: 48px !important;
 	padding-bottom: 15px;
+	letter-spacing: -1px;
 	color: #000;
 }
 h1.white{ color: #fff; }
 .black{ color: #fff; background-color: #000 }
-.m0{ margin-top: 0px; margin-bottom: 0px; padding: 15px; font-size: 1.6em; }
+.m0{ margin-top: 0px; margin-bottom: 0px; padding: 15px; font-size: 32px !important; }
 .eee{ color: #eee; }
-
-.navbar{
-	margin-bottom: 0px;
-}
+.navbar{ margin-bottom: 0px; }
+.navbar-default .navbar-nav>li>a{ color: #535353; }
 
 /*============================
 media qrys
 ============================ */
-/* fix brand on mobile */
+/* fix brand and stuff on mobile */
 @media (min-width: 992px) { 
 	.navbar-brand{ padding-top: 70px; }
 	.nav>li>a{ padding-left: 50px; }
@@ -40,7 +39,7 @@ media qrys
 	.nav{ padding: 20px 0; }
 }
 @media (max-width: 767px){
-	.container.s2{ background-image: none !important; }
+	.container.s2, .jumbotron.s3{ background-image: none !important; }
 }
 /* fix mobile toggler to look like nivas dsgn */
 .navbar-default .navbar-toggle:hover{ background-color: transparent; }
@@ -74,7 +73,7 @@ navigation theme
 	font-size: 31px;
 	font-weight: 800;
 }
-button[role="firstcta"]{
+button.firstcta{
 	color: #000;
 	background-color: #fff;
 	border: #fff;
@@ -92,7 +91,7 @@ button[role="firstcta"]{
 	margin-bottom: 0px;
 	padding-bottom: 10px;
 }
-/*gray ones*/
+/*ferlauf css hack*/
 .jumbotron.s1{ 
 	color: white;
 	margin-bottom: -70px!important;
